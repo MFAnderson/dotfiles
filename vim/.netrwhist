@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/manderso/Downloads/nexus-2.11.4-01-bundle/sonatype-work/nexus/storage/releases/com/apple/store/brucke/platform/QuotesMachineService'
+let g:netrw_dirhist_2='/Users/manderso/projects/euler/fsharp'
+let g:netrw_dirhist_3='/Users/manderso/orange/ansible-gocd'
+let g:netrw_dirhist_4='/Users/manderso/orange/ansible-gocd/tests'
+let g:netrw_dirhist_5='/Users/manderso/projects/go_dash/components'
+let g:netrw_dirhist_6='/Users/manderso/projects/go_dash'
+let g:netrw_dirhist_7='/Users/manderso/projects/go_dash/components'
