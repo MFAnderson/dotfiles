@@ -2,7 +2,6 @@ export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 export RBENV_ROOT=/usr/local/var/rbenv
 export PS1="\u \W$ "
-export HOMEBREW_GITHUB_API_TOKEN=865c3e64ffe66dd9b6a2c8123f8e44351a34c71e
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
