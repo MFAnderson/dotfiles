@@ -1,0 +1,28 @@
+[core]
+    excludesfile = ~/.gitignore.global
+[user]
+	name = Max Anderson
+	email = manderso@thoughtworks.com
+[pull]
+	rebase = true
+[credential]
+	helper = osxkeychain
+[alias]
+    st = status
+    co = checkout
+    amend = commit --amend
+    patient = diff --patience
+    l = log --graph --date=short
+    changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
+    short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
+    simple = log --pretty=format:\" * %s\"
+    shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
+[format]
+   # pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
+[push]
+    default = simple
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+[diff]
+    mnemonicprefix = true
