@@ -1,2 +1,5 @@
 set completion-query-items 10000
 set completion-ignore-case On
+set visible-stats on
+set match-hidden-files off
+set mark-symlinked-directories on

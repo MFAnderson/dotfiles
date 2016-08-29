@@ -76,3 +76,4 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 au BufNewFile,BufRead *.md setlocal ft=markdown
+au BufNewFile,BufRead *.yml setlocal sw=2

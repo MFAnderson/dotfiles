@@ -1,12 +1,12 @@
 #!/bin/bash
 
-xcode-select --install
+#xcode-select --install
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew bundle
-
-for x in $(ls -d _*); do
-    ln -s $x ~/.${x#_}
+#brew bundle
+echo $(dirname $0)
+for x in $(ls -d $(dirname $0)/_*); do
+    ln -s $x ~/.${x##*_}
 done
 

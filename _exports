@@ -1,0 +1,31 @@
+#my janky ass path
+#sometimes you need to use chef and chefdk is a butt
+PATH="/opt/chefdk/bin:$PATH"
+#brewwww
+PATH=/usr/local/bin:$PATH
+PATH="$PATH:$HOME/bin"
+export PATH="/usr/local/heroku/bin:$PATH"
+export CLICOLOR=1
+export GREP_OPTIONS='--color=auto'
+export RBENV_ROOT=/usr/local/var/rbenv
+#using java8 is cool and good when youre not at a client stuck on java6
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+
+export EDITOR=/usr/bin/vim
+
+export MONO_GAC_PREFIX="/usr/local"
+
+export SONAR_RUNNER_HOME=/usr/local/Cellar/sonar-runner/2.4/libexec
+
+export HISTFILESIZE=1000000
+export HISTSIZE=1000000
+export HISTCONTROL=ignoredups
+export HISTIGNORE=" *:ls:cd:cd -:pwd:exit:date:* --help:* -h"
+
+export LANG="en_US.UTF-8";
+export LC_ALL="en_US.UTF-8";
+# Highlight section titles in manual pages
+export LESS_TERMCAP_md="${yellow}";
+
+# Don’t clear the screen after quitting a manual page
+export MANPAGER="less -X";
