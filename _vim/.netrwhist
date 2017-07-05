@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/manderso/projects/gocd-provisioner/cd-provisioner/roles/go-common/tasks'
-let g:netrw_dirhist_2='/Users/manderso/projects/gocd-provisioner/cd-provisioner/roles/common'
-let g:netrw_dirhist_3='/Users/manderso/projects/gocd-provisioner/cd-provisioner/roles/common/tasks'

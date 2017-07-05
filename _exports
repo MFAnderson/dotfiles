@@ -4,13 +4,14 @@ PATH="/opt/chefdk/bin:$PATH"
 #brewwww
 PATH=/usr/local/bin:$PATH
 PATH="$PATH:$HOME/bin"
+PATH="$PATH:~/go/bin"
 export PATH="/usr/local/heroku/bin:$PATH"
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 export RBENV_ROOT=/usr/local/var/rbenv
 #using java8 is cool and good when youre not at a client stuck on java6
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-
+export GOPATH=$HOME/go
 export EDITOR=/usr/bin/vim
 
 export MONO_GAC_PREFIX="/usr/local"

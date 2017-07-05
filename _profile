@@ -7,6 +7,14 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
+alias python=python3
+alias ipython=ipython3
+alias pip=pip3
+
+alias docker_clean='docker rm $(docker ps -a --filter=status=exited -q) && docker rmi $(docker images -a --filter=dangling=true -q)'
+
 shopt -s histappend
 shopt -s cdspell
 shopt -s nocaseglob
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

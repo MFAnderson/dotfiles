@@ -11,8 +11,12 @@
 [alias]
     st = status
     s = status -s
-
+    br = branch
     co = checkout
+
+    tags = tag -l
+    branches = branch -a
+    remotes = remote -v
 
     amend = commit --amend
     
@@ -22,7 +26,8 @@
     short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
     simple = log --pretty=format:\" * %s\"
     shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
-
+    graph = log --graph --color --pretty=format:"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%x20(%ce)%n%x20%s%n"
+    shortgraph = log --graph --color --pretty='format:%C(yellow)%h%Creset %s %C(magenta)[%an]%Creset'
 [format]
     pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
 [push]
@@ -40,3 +45,6 @@
     untracked = cyan
 [diff]
     mnemonicprefix = true
+    renames = copies
+[help]
+    autocorrect = 1
