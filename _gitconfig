@@ -8,6 +8,10 @@
 	rebase = true
 [credential]
 	helper = osxkeychain
+[advice]
+    pushNonFastForward = false
+    resolveConflict = false
+    detachedHead = false
 [alias]
     st = status
     s = status -s
@@ -20,7 +24,9 @@
 
     amend = commit --amend
     
+    showm = log --format=%B -n 1
     patient = diff --patience
+    wdiff = diff --word-diff
     l = log --graph --date=short
     changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
     short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
@@ -47,4 +53,6 @@
     mnemonicprefix = true
     renames = copies
 [help]
-    autocorrect = 1
+    autocorrect = 15
+[init]
+	templatedir = /Users/manderso/.git-templates

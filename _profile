@@ -1,20 +1,24 @@
 unset file
-source ~/.bash_prompt
 source ~/.exports
+source ~/.aliases
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+#if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
 
-alias python=python3
-alias ipython=ipython3
-alias pip=pip3
+#alias python=python3
+#alias ipython=ipython3
+#alias pip=pip3
 
-alias docker_clean='docker rm $(docker ps -a --filter=status=exited -q) && docker rmi $(docker images -a --filter=dangling=true -q)'
+alias docker_clean='docker rm $(docker ps -a --filter=status=exited -q)'
 
 shopt -s histappend
 shopt -s cdspell
 shopt -s nocaseglob
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+source ~/.bash_prompt
